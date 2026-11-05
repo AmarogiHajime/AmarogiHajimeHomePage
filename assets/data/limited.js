@@ -17,12 +17,12 @@
 window.SiteContent = window.SiteContent || {};
 window.SiteContent.limitedGroups = [
   {
-    keyword: 'サンプルA', 
+    keyword: '美味しい豆腐美味しい', 
     videos: [
       {
-        title: '動画タイトルA', 
-        description: 'ここに動画Aの概要を書きます。', 
-        url: '', 
+        title: 'Miiで遊ぼう', 
+        description: '『さめなにか【ポケモンチャンピオンズ】』のおまけ動画です。', 
+        url: 'https://youtu.be/Mud96xi9gC4', 
       },
     ],
   },
