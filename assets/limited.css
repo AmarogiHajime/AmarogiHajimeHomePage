@@ -1,0 +1,23 @@
+/* 限定動画ページだけに適用するデザイン */
+.limited-form-panel { margin:8px 0 38px; padding:24px; border:1px solid var(--border); border-radius:4px; background:var(--surface); }
+.limited-form-panel h2 { margin:0 0 8px; font-size:18px; }
+.limited-form-panel p { margin:0 0 18px; color:var(--muted); font-size:13px; }
+.limited-form { display:flex; flex-wrap:wrap; gap:10px; align-items:center; }
+.limited-keyword { flex:1 1 240px; min-width:0; border:1px solid var(--border); border-radius:4px; padding:11px 13px; font:inherit; background:var(--page-bg); color:var(--ink); }
+.limited-keyword:focus-visible, .limited-button:focus-visible { outline:2px solid var(--link); outline-offset:2px; }
+.limited-button { appearance:none; border:1px solid var(--ink); border-radius:4px; background:var(--ink); color:var(--page-bg); padding:11px 18px; font:inherit; font-size:14px; cursor:pointer; }
+.limited-button:hover { opacity:.86; }
+.limited-secondary { background:var(--page-bg); color:var(--ink); }
+.limited-error { color:#a32525 !important; margin:14px 0 0 !important; }
+.limited-error:empty { display:none; }
+.limited-result { margin:0 0 48px; }
+.limited-result-head { display:flex; justify-content:space-between; flex-wrap:wrap; align-items:start; gap:12px; margin:0 0 28px; }
+.limited-result-head h2 { margin:0 0 4px; font-size:24px; }
+.limited-description { margin:0; color:var(--muted); font-size:13px; }
+.limited-work { min-width:0; border-top:1px solid var(--border); padding:24px 0; }
+.limited-work h3 { margin:0; font-size:18px; }
+.limited-work .video-grid { margin-top:14px; }
+.limited-provider { margin-bottom:10px; }
+.limited-placeholder { font-size:13px; color:var(--muted); margin:12px 0 0; }
+.limited-result[hidden], .limited-form-panel[hidden] { display:none; }
+@media (max-width:570px) { .limited-form-panel { padding:18px; } .limited-button { width:100%; } }

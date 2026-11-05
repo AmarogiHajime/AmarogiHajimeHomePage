@@ -85,6 +85,7 @@
         ['home', 'トップ', 'index.html'],
         ['characters', 'キャラクター', 'characters.html'],
         ['works', '作品一覧', 'works.html'],
+        ['limited', 'キーワード入力', 'limited.html'],
         ['links', 'リンク', 'links.html'],
       ].forEach(([key, label, url]) => {
         const link = element('a', '', label);
@@ -109,6 +110,7 @@
   }
 
   function pageTitle() {
+    if (page === 'limited') return '今回のキーワード入力ページ';
     if (page === 'character') {
       return (characters[selectedCharacterId()] || {}).name || 'キャラクター';
     }
